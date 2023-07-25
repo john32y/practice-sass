@@ -1,0 +1,31 @@
+* {
+  text-align: center;
+  border: 3px dashed yellow;
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  animation-name: box-spin-animate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: 0.3s linear;
+  position: relative;
+
+  @keyframes box-spin-animate {
+    0% {
+      transform: rotate(0deg);
+      background-color: blue;
+      filter: hue-rotate(75deg);
+    }
+
+    50% {
+      border-radius: 0%;
+      filter: invert(1);
+    }
+
+    100% {
+      transform: rotate(360deg);
+      background-color: pink;
+    }
+  }
+}

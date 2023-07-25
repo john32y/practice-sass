@@ -1,0 +1,9 @@
+@use "variables" as var;
+@use "../components/BoxRace/BoxRace";
+@use "../components/Box/Box";
+@use "../components/Boxspin/BoxSpin";
+
+body {
+  background-color:  var.$main-color;
+  color: var.$seconday-color;
+}

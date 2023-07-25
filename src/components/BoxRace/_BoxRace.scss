@@ -1,0 +1,51 @@
+@use '../../styles/variables' as var;
+
+.boxrace-container {
+  background-color: lightcyan;
+
+
+.boxrace {
+  border: var.$border-property;
+  padding: var.$padding;
+  width: 24;
+  text-align: center;
+  font-weight: 800;
+
+  position: relative;
+  animation: boxraceAnimation 10s linear 3s normal infinite;
+
+
+// boxraceAnimation: animation name
+// 5s: duration
+// linear timing functions
+// ease 
+// ease-in 
+// ease-out 
+// ease-in-out
+// linear 
+// stop-start 
+// stop-end 
+// cubic-brazier(n,n,n,n) 
+// 0.5s: delay 
+// normal: direction
+// normal 
+// reverse 
+// altenate 
+// alternate-reverse 
+// infinite: iteration count
+}
+.race-linear { animation-timing-function: Linear;}
+.race-ease { animation-timing-function: ease;}
+.race-ease-in { animation-timing-function: ease-in;}
+.race-ease-out { animation-timing-function: ease-out;}
+.race-ease-in-out { animation-timing-function: ease-in-out;}
+
+@keyframes boxraceAnimation {
+  0% {left: 0%;}
+  25% {left: 25%; box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.9);}
+  50% {left: 50%; background-color: red;}
+  75% {left: 75%; transform: scale(2);}
+  100% {left: 100%;}
+}
+
+}
